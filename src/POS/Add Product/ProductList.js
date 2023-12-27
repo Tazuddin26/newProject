@@ -84,7 +84,7 @@ function ProductList() {
         <div className="w-screen h-screen" >
             <div className="w-full h-full bg-gray-100 ">
                 <div className="w-full h-[10%] shadow-lg flex bg-white ">
-                   
+
                     <Tbutton name="Sale" className="w-[6%] h-[50%] ml-36 hover:bg-green-500 "
                     />
                     <Tbutton name="Customer Receive" className="w-[12%] h-[50%] hover:bg-green-500"
@@ -132,16 +132,16 @@ function ProductList() {
                         <div className="w-full h-full ">
                             <table className=" border w-full h-[6%] text-gray-600 ml-0 ">
                                 <thead className="bg-green-500 text-white">
-                                <tr>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">SL.</th>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Product Name</th>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Product Model</th>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Supplier Name</th>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Price</th>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Supplier Price</th>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Image</th>
-                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Action</th>
-                                </tr>
+                                    <tr>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">SL.</th>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">Product Name</th>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">Product Model</th>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">Supplier Name</th>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">Price</th>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">Supplier Price</th>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">Image</th>
+                                        <th className="py-4 px-6 uppercase font-semibold text-sm">Action</th>
+                                    </tr>
                                 </thead>
                             </table>
                             {value}

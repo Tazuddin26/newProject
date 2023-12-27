@@ -16,8 +16,11 @@ import StockList from './POS/Add Product/Stock';
 import Plist from './POS/Add Product/Plist';
 import SideBar from './POS/Home/Sidebar';
 import NavigationBar from './LogPage/NavBar';
-//import ButtonCounter from './POS/Sales/Ohetrs/abc';
-
+import Cart from './POS/Cart/Cart';
+import Header from './POS/Cart/Header';
+import ImageButton from './POS/Sales/ButtonImage';
+import ExCart from './POS/Cart/Ecart';
+import ButtonCounter from './POS/Cart/abc';
 
 
 function App() {
@@ -36,6 +39,10 @@ function App() {
         <Route path="/p" element={<Plist/>} />  
         <Route path="/s" element={<SideBar/>} /> 
         <Route path="/nav" element={<NavigationBar/>} />
+        <Route path="/cart" element={<Cart/>} /> 
+        <Route path="/imgbutton" element={<ImageButton/>} /> 
+        <Route path="/ecart" element={<ExCart/>} /> 
+        <Route path="/bc" element={<ButtonCounter/>} />  
       </Routes>
     </div>
   );

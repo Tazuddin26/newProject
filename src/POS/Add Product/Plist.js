@@ -76,17 +76,12 @@ function Plist() {
                                     <Link to={"/" + (d.id + "/edit")} className=" py-0 px-1 shadow-lg text-2xl bg-cyan-400 hover:bg-cyan-300" >
                                     <IonIcon icon={createOutline} className=''></IonIcon>
                                 </Link>
-
                             </td>
                             </tr>
-
                         ))}
-
                 </tbody>
             </table>
-
         </div>
-
         </div >
     )
 

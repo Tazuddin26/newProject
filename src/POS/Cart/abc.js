@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import ImageButton1 from "../POS/Sales/ButtonImage";
+//import ImageButton1 from "../POS/Sales/ButtonImage";
 function ButtonCounter() {
   const [buttons, setButtons] = useState([
     { id: 1, count: 0 },
     { id: 2, count: 0 },
     { id: 3, count: 0 },
+    { id: 4, count: 0 },
   ]);
 
   const handleButtonClick = (id) => {
@@ -22,10 +23,10 @@ function ButtonCounter() {
     <div>
       {buttons.map((button) => (
         <button key={button.id} onClick={() => handleButtonClick(button.id)} className='border bg-blue-400'>
-          Button {button.id} ({button.count})
+          Button ({button.count})
         </button>
       ))}
-      <ImageButton1/>
+      {/* <ImageButton1/> */}
     </div>
   );
 }
