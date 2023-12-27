@@ -13,6 +13,10 @@ import Pupdate from './POS/Add Product/ProductUpdate';
 import Search from './POS/Sales/search';
 import ProductSearchInput from './POS/Sales/search';
 import StockList from './POS/Add Product/Stock';
+import Plist from './POS/Add Product/Plist';
+import SideBar from './POS/Home/Sidebar';
+import NavigationBar from './LogPage/NavBar';
+//import ButtonCounter from './POS/Sales/Ohetrs/abc';
 
 
 
@@ -29,7 +33,9 @@ function App() {
         <Route path="/:id/edit" element={<Pupdate/>} /> 
         <Route path="/stock" element={<StockList/>} /> 
         <Route path="/search" element={<ProductSearchInput/>} />  
-        
+        <Route path="/p" element={<Plist/>} />  
+        <Route path="/s" element={<SideBar/>} /> 
+        <Route path="/nav" element={<NavigationBar/>} />
       </Routes>
     </div>
   );

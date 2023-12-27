@@ -19,16 +19,16 @@ function Plist({ id, name, model, supplier, salePrice, costPrice, image }) {
     }
     return (
         <div>
-            <table className=" w-full h-[6%] ml-2 border">
-                <tr className="">
-                    <th className="w-[6%] border">{id}</th>
-                    <td className="w-[16%] ml-2 text-green-600 text-center">{name}</td>
+            <table className=" w-full h-[6%] ml-0 border">
+                <tr className="bg-green-300 border-b border-l-2 hover:bg-green-100 hover:scale-105 cursor-pointer duration-300">
+                    <td className="py-3 px-6 text-white ">{id}</td>
+                    <td className="w-[16%] ml-2 text-center">{name}</td>
                     <td className="w-[15%]">{model}</td>
                     <td className="w-[15%] ">{supplier}</td>
                     <td className="w-[12%] ">{salePrice}</td>
                     <td className="w-[12%] ">{costPrice}</td>
                     <td className="w-[15%] ">{image}</td>
-                    <div className="w-full h-[10%]  p-2">
+                    <div className="w-full h-[10%] p-3">
                         <td className=" text-xl text-center ">
                             <button
                                 type="button"
@@ -105,14 +105,14 @@ function ProductList() {
                     </div>
                 </div>
 
-                <div className="w-[98%] h-[80%] bg-white first-letter:shadow-lg mt-8 ml-4 border border-gray-300 ">
+                <div className="w-[98%] h-[80%] first-letter:shadow-lg mt-8 ml-4 border border-gray-300 bg-gray-800">
                     <div className="w-full h-[10%] border-b flex border-gray-300 col-span-8 ">
                         <div className="absolute -top-0.4 -left-0.4 border-l-4px] border-l-transparent border-t-[20px] border-t-green-600 
                             border-r-[20px] border-r-transparent">
                         </div>
-                        <span className="ml-4 p-4 text-lg font-bold font-mono text-gray-700 ">Manage Product</span>
+                        <span className="ml-4 p-4 text-lg font-bold font-mono text-white ">Manage Product</span>
                         <div className="w-[80%] h-full flex  justify-end">
-                            <Link to='/sales'> <button type="button" className="w-full h-[60%] text-sm font-bold text-white mt-4  bg-sky-500
+                            <Link to='/add'> <button type="button" className="w-full h-[60%] text-sm font-bold text-white mt-4  bg-sky-500
                                              hover:shadow-sky-300/50 hover:bg-sky-400 flex rounded-sm">
                                 {/* <IonIcon icon={add} ></IonIcon> */}
                                 <GoPlus className="text-md mt-2.5 " />
@@ -130,17 +130,19 @@ function ProductList() {
                     </div>
                     <div className="w-full h-full ">
                         <div className="w-full h-full ">
-                            <table className=" border w-full h-[6%] text-gray-600">
+                            <table className=" border w-full h-[6%] text-gray-600 ml-0 ">
+                                <thead className="bg-green-500 text-white">
                                 <tr>
-                                    <th className="w-[6%] border-r border-slate-300">SL.</th>
-                                    <th className="w-[15%] border-r border-slate-300">Product Name</th>
-                                    <th className="w-[12%] border-r border-slate-300">Product Model</th>
-                                    <th className="w-[12%] border-r border-slate-300">Supplier Name</th>
-                                    <th className="w-[12%] border-r border-slate-300">Price</th>
-                                    <th className="w-[12%] border-r border-slate-300">Supplier Price</th>
-                                    <th className="w-[10%] border-r border-slate-300">Image</th>
-                                    <th className="w-[15%] border-slate-600">Action</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">SL.</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Product Name</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Product Model</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Supplier Name</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Price</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Supplier Price</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Image</th>
+                                    <th className="py-4 px-6 uppercase font-semibold text-sm">Action</th>
                                 </tr>
+                                </thead>
                             </table>
                             {value}
                             {/* <div className="w-[30%] h-[40%] mt-4 flex justify-start ml-8 ">

@@ -272,7 +272,7 @@ const Pupdate = () => {
             body: JSON.stringify(values),
         })
             .then((response) => {
-                navigate('/');
+                navigate('/list');
                 // alert(JSON.stringify(values, null, 2))
                 // setSubmitting(false);
             });

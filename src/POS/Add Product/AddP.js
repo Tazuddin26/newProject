@@ -9,8 +9,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
     <div className="w-screen h-screen">
         <form onSubmit={handleSubmit} className='w-full h-full '>
             <div className="w-full h-full">
-
-                <div className="w-full h-[10%] shadow-lg flex">
+                <div className="w-full h-[10%] shadow-lg flex bg-gray-800">
                     <div className="w-[80%] h-full">
                         <Tbutton name="Sale" className="w-[6%] h-[50%] hover:bg-green-500 text-xl"
                         />
@@ -18,7 +17,6 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                         />
                         <Tbutton name="Supplier Payment" className="w-[15%] h-[50%] hover:bg-green-500"
                         />
-
                         <Tbutton name="Purchase" className="w-[10%] h-[50%] hover:bg-green-500"
                         />
 
@@ -33,17 +31,16 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
 
                         </button></Link>
                     </div>
-
                 </div>
-                <div className="w-[95%] h-[70%] bg-white first-letter:shadow-lg mt-8 ml-10 border border-gray-300 ">
+                <div className="w-[95%] h-[70%] bg-gray-800 first-letter:shadow-lg mt-8 ml-10 border border-gray-300 ">
                     <div className="w-full h-[11%] border-b flex border-gray-300 col-span-8 ">
                         <div className="absolute -top-0.4 -left-0.4 border-l-4px] border-l-transparent border-t-[20px]
                      border-t-green-600 border-r-[20px] border-r-transparent">
                         </div>
-                        <span className="ml-4 p-3 text-lg font-mono ">Add Product</span>
+                        <span className="ml-4 p-3 text-lg font-mono text-white ">Add Product</span>
                     </div>
                     <div className="w-full h-full flex ">
-                        <div className="w-[15%] h-full my-4 flex flex-col">
+                        <div className="w-[15%] h-full my-4 flex flex-col text-white">
                             <span className="text-start ml-4 mb-4 mt-2 ">Barcode/QR-code</span>
                             <span className="text-start ml-4 mb-4 mt-3">Product Name </span>
                             <span className="text-start ml-4 mb-4 mt-3">Category</span>
@@ -51,13 +48,12 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                             <span className="text-start ml-4 mb-4 mt-3">Cost Price</span>
                             <span className="text-start ml-4 mb-4 mt-3">Image</span>
                             <span className="text-start ml-4 mb-4 mt-3">Supplier</span>
-
                         </div>
-                        <div className="w-[80%] h-full flex ">
+                        <div className="w-[80%] h-full flex  ">
                             <div className="w-full h-full ">
                                 <div className="w-[97%] mt-2 ml-4">
                                     <input
-                                        className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                        className="w-full ml-4 p-2 border shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                         type='barcode'
                                         name='barcode'
                                         placeholder="Barcode/QR-code"
@@ -75,7 +71,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                     <div className="w-[90%] h-full ">
                                         <div className="w-[93%] mt-3 ml-4">
                                             <input
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='name'
                                                 placeholder="Product Name"
@@ -89,7 +85,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4">
                                             <select
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='category'
                                                 placeholder="Select Category"
@@ -110,7 +106,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4">
                                             <input
-                                                className="w-full ml-4 p-2  text-end border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2  text-end border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='salePrice'
                                                 placeholder="0.00"
@@ -124,7 +120,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4">
                                             <input
-                                                className="w-full ml-4 p-2 border text-end shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border text-end  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='costPrice'
                                                 placeholder="0.00"
@@ -138,7 +134,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4 ">
                                             <input
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type="file"
                                                 name='image'
                                                 //placeholder="Search Product"
@@ -152,7 +148,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4 ">
                                             <select
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='supplier'
                                                 placeholder="Select Options"
@@ -171,7 +167,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                             </span>
                                         </div>
                                     </div>
-                                    <div className=" w-[45%] h-full flex flex-col">
+                                    <div className=" w-[45%] h-full flex flex-col text-white">
                                         <span className="text-start ml-4 mb-4 mt-4">Serial No</span>
                                         <span className="text-start ml-4 mb-4 mt-4">Model No</span>
                                         <span className="text-start ml-4 mb-4 mt-4">Unit</span>
@@ -181,7 +177,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                     <div className="w-full h-full  mb-4">
                                         <div className="w-[93%] mt-3 ml-4 m-2">
                                             <input
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='sn'
                                                 placeholder="Enter Serial Number"
@@ -192,7 +188,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4 ">
                                             <input
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='model'
                                                 placeholder="Product Model Number"
@@ -203,7 +199,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4 ">
                                             <select
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='unit'
                                                 placeholder="Select Options"
@@ -219,7 +215,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4 ">
                                             <input
-                                                className="w-full ml-4 p-2 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full ml-4 p-2 border  shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='vat'
                                                 placeholder="Product Vat %"
@@ -230,7 +226,7 @@ const Form = ({ values, errors, touched, handleChange, handleBlur, handleSubmit,
                                         </div>
                                         <div className="w-[93%] mt-3 ml-4  ">
                                             <textarea
-                                                className="w-full h-[10%] ml-4 border shadow-lg shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
+                                                className="w-full h-[10%] ml-4 border shadow-gray-400 rounded-md border-x-indigo-800 hover:border-y-indigo-800"
                                                 type='text'
                                                 name='details'
                                                 placeholder="Product Details"
